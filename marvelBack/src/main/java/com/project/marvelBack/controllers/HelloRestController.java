@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.annotation.PostConstruct;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,6 +13,7 @@ import com.project.marvelBack.entity.Film;
 import com.project.marvelBack.entity.Personnage;
 
 @RestController
+@CrossOrigin
 public class HelloRestController {
 	private List<Film> films = new ArrayList<>();;
 	private List<Personnage> personnages;
@@ -51,8 +53,7 @@ public class HelloRestController {
 	}
 	@GetMapping("/films")
 	public List<Film> getFilms() {
-		Film film= new Film (1, "Iron Man", "IronMan.jpg", 2007);
-		films.add(film);
+
 
 		return films;
 	}

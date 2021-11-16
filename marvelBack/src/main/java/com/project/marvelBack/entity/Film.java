@@ -4,21 +4,21 @@ public class Film {
 	private int id;
 	private String title;
 	private String image;
-	private int annee;
+	private int year;
 	
 	public Film() {
 	}
-	public Film(int id, String title, String image, int annee) {
+	public Film(int id, String title, String image, int year) {
 		this.id = id;
 		this.title = title;
 		this.image = image;
-		this.annee = annee;
+		this.year = year;
 	}
 	
-	public Film(String title, String image, int annee) {
+	public Film(String title, String image, int year) {
 		this.title = title;
 		this.image = image;
-		this.annee = annee;
+		this.year = year;
 	}
 	public int getId() {
 		return id;
@@ -38,11 +38,11 @@ public class Film {
 	public void setImage(String image) {
 		this.image = image;
 	}
-	public int getAnnee() {
-		return annee;
+	public int getYear() {
+		return year;
 	}
-	public void setAnnee(int annee) {
-		this.annee = annee;
+	public void setYear(int year) {
+		this.year = year;
 	}
 	
 }
