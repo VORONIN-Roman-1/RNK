@@ -1,0 +1,46 @@
+LISTE DES FILMS (27): 
+PERSONNAGES + (nombre de PERSONNAGES).
+
+PHASE I:
+1_ Iron Man:                                     Iron Man, War Machine, Pepper Potts. (3)
+2_ L'incroyable Hulk :                           Hulk, Iron Man, Nick Fury. (3)
+3_ Iron Man 2 :                                  Iron Man, War Machine, Pepper Potts, Black Widow, Nick Fury. (5).
+4_ Thor:                                         Thor, Odin, Jane Foster, Heimdall, Loki, Hawkeye, Nick Fury. (7)
+5_ Captain America: First Avenger :              Captain America, Le Soldat de l'hiver, Nick Fury. (3).
+6_ Avengers :                                    Iron Man, Captain America, Hulk, Hawkeye, Thor, Black Widow, Loki, Nick Fury, Thanos. (10).
+
+PHASE II:
+7_ Iron Man 3 :                                  Iron Man, War Machine, Pepper Potts, Hulk. (4)  
+8_ Thor: Le monde des ténèbres :                 Thor, Odin, Jane Foster, Heimdall, Loki, Le Collectionneur. (7).
+9_ Captain America : Le Soldat de l'hiver :      Captain America, Le Soldat de l'hiver, Black Widow, Le Faucon, Nick Fury, Wanda Maximoff. (6).    
+10_ Les Gardiens de la Galaxie :                 Star-Lord, Gamora, Rocket, Groot, Drax, Yondu, Nebula, Le Collectionneur. (8).
+11_ Avengers: L'Ere d'Ultron :                   Iron Man, Captain America, Hulk, Hawkeye, Thor, Black Widow, Thanos, Ultron, War Machine, Le Faucon, Wanda Maximoff, Pietro Maximoff, Heimdall, Nick Fury. (13).
+12_ Ant-Man :                                    Ant-Man, La Guêpe, Le Faucon. (3).
+
+PHASE III:
+13_ Captain America: Civil War :                 Iron Man, Captain America, War Machine, Hawkeye, Le Soldat de l'hiver, Black Widow, Spider-Man, Le Faucon, Black Panther, Vision, Wanda Maximoff, Ant-Man. (12) 
+14_ Doctor Strange :                             Docteur Strange, Mordo, Wang, Thor. (3).
+15_ Les Gardiens de la Galaxie Vol.2 :           Star-Lord, Gamora, Rocket, Groot, Drax, Yondu, Nebula, Mantis. (8).  
+16_ Spider-Man: Homecoming :                     Spider-Man, Iron-Man, Captain America. (3).
+17_ Thor : Ragnarok :                            Thor, Hulk, Loki, Valkyrie, Heimdall, Odin, Docteur Strange. (7)
+18_ Black Panther :                              Black Panther, Nakia, Okoye, Shuri, W'Kabi, Le Soldat de l'hiver. (6).
+19_ Avengers: Infinity War :                     Iron Man, Captain America, Hulk, Thor, Black Widow, War Machine, Le Faucon, Vision, Wanda Maximoff, Le Soldat de l'hiver,Heimdall, Loki, Spider-Man, Black Panther, Nakia, Okoye, Shuri, Docteur Strange, Wang, Star-Lord, Gamora, Rocket, Groot, Drax, Nebula, Mantis, Le Collectionneur, Thanos.(28) 
+20_ Ant-Man et la Guêpe :                        Ant-Man, La Guêpe (2).
+21_ Captain Marvel :                             Captain Marvel, Nick Fury. (2).
+22_ Avengers: Endgame :                          Iron Man, Captain America, Hulk, Thor, Black Widow, War Machine, Le Faucon, Vision, Wanda Maximoff, Le Soldat de l'hiver, Hawkeye, Loki, Spider-Man, Black Panther, Nakia, Okoye, Shuri, Docteur Strange, Wang, Star-Lord, Gamora, Rocket, Groot, Drax, Nebula, Mantis, Ant-Man, La Guêpe, Captain Marvel, Pepper Potts, Nick Fury, Thanos.  (32).
+23_ Spider-Man: Far From Home :                  Spider-Man, Nick Fury (2).
+
+PHASE IV:
+24_ Black Widow :                                Black Widow. (1).
+25_ Shang-Chi et la Légende des Dix Anneaux :    Shang-Chi. (1).
+26_ Les Éternels :                               Ajak, Druig, Gilgamesh, Ikaris, Kingo, Makkari, Phastos, Sersi, Sprite, Thena. (10).
+27_ Spider-Man: No Way Home :                    Spider-Man(1).
+
+
+LISTE DE SERIES-TV (5) : PERSONNAGES + (nombre de PERSONNAGES).
+
+1_ WandaVision :                                 Wanda Maximoff, Vision. (2).
+2_ Falcon et le Soldat de l'Hiver :              Le Faucon, Le Soldat de l'hiver. (2).
+3_ Loki :                                        Loki. (1).
+4_ What If...? :
+5_ Hawkeye :                                     Hawkeye. (1). 
