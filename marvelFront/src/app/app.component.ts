@@ -11,13 +11,13 @@ export class AppComponent {
   title = 'marvelFront';
   films!: Film[];
   constructor(private filmService: FilmService) { }
+ 
   ngOnInit(): void {
     this.getFilms();
 }
 getFilms(): void {
     this.filmService.getFilms()
-    .subscribe(films => this.films =
-      films );
+    .subscribe(films => this.films = films );
     }
     
 }
