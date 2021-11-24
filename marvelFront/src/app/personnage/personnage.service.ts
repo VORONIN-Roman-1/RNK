@@ -13,10 +13,10 @@ export class PersonnageService {
   private personnageUrl = 'http://localhost:8080/personnages';
 
   // Retourne tous les personnages
-  getFilms(): Observable<Personnage[]> {
+  getPersonnages(): Observable<Personnage[]> {
     return this.http.get<Personnage[]>(this.personnageUrl).pipe(
-      tap(_ => this.log(`fetched films`)),
-      catchError(this.handleError(`getFilms`, []))
+      tap(_ => this.log(`fetched personnages`)),
+      catchError(this.handleError(`getPersonnages`, []))
     )
   }
   private log(log: string) {
