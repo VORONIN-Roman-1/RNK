@@ -10,6 +10,8 @@ import com.project.marvelBack.entity.Film;
 @Repository
 public interface FilmRepository extends JpaRepository <Film, Integer> {
 	
-	public List<Film> findByTitle(String title);
+	public List<Film> findByTitle (String title);
+	
+	public List<Film> findById (String id);
 
 }

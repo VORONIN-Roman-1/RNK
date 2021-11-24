@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.project.marvelBack.dao.FilmRepository;
+import com.project.marvelBack.dao.PersonnageRepository;
 import com.project.marvelBack.entity.Film;
 import com.project.marvelBack.entity.Personnage;
 
@@ -22,6 +23,9 @@ public class HelloRestController {
 	
 	@Autowired
 	private FilmRepository filmrepository ;
+	
+	@Autowired
+	private PersonnageRepository personnagerepository;
 	
 	
 	@PostConstruct
@@ -75,6 +79,7 @@ public class HelloRestController {
 	@GetMapping("/personnages")
 	public List<Personnage> getPersonnages() {
 		
+		personnagerepository.save(personnages.get(1));
 		
 		return personnages;
 	}

@@ -21,6 +21,8 @@ public class Personnage {
 	private String alias;
 	@Column (name= "description")
 	private String description;
+	
+	// définir les constructeurs
 	public Personnage(int id, String name, String image, String alias, String description) {
 		this.id = id;
 		this.name = name;
@@ -38,7 +40,9 @@ public class Personnage {
 
 	public Personnage() {
 	}
-
+	
+	// définir les getters() & les setters()
+	
 	public int getId() {
 		return id;
 	}
@@ -77,6 +81,13 @@ public class Personnage {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+	// définir toString()
+	
+	@Override
+	public String toString() {
+		
+	return "Film [id=" + id + ", name=" + name + ", image=" + image + ", alias=" + alias + ", description= " + description + "]";
 	}
 	
 }
