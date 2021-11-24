@@ -1,5 +1,5 @@
-import { Personnage } from './personnage';
 import { Injectable } from '@angular/core';
+import { Personnage } from './personnage';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs'; // RxJS 6, à utiliser
@@ -7,14 +7,14 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 
 @Injectable()
-export class FilmService {
+export class PersonnageService {
   constructor(private http: HttpClient) { }
 
-  private filmUrl = 'http://localhost:8080/films';
+  private personnageUrl = 'http://localhost:8080/personnages';
 
-  // Retourne tous les films
+  // Retourne tous les personnages
   getFilms(): Observable<Personnage[]> {
-    return this.http.get<Personnage[]>(this.filmUrl).pipe(
+    return this.http.get<Personnage[]>(this.personnageUrl).pipe(
       tap(_ => this.log(`fetched films`)),
       catchError(this.handleError(`getFilms`, []))
     )
