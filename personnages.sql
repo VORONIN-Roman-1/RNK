@@ -12,7 +12,7 @@ INSERT INTO `personnages` VALUES
     (12, 'Loki','photoLoki','Loki'),
     (13, 'Hawkeye','photoHawkeye','Hawkeye'),
     (14, 'Captain America','photoCaptainAmerica',''),
-    (15, 'Le Soldat de l hiver','photoLeSoldatDeLhiver',''), ---
+    (15, "Le Soldat de l'hiver",'photoLeSoldatDeLhiver',''), ---
     (16, 'Thanos','photoThanos','Thanos'),
     (17, 'Le Collectionneur','photoLeCollectionneur','Le Collectionneur'),
     (18, 'Le Faucon','photoLeFaucon','Le Faucon'),-----
