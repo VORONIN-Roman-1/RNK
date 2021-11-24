@@ -1,10 +1,25 @@
 package com.project.marvelBack.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "personnage")
 public class Personnage {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
+	@Column (name= "name")
 	private String name;
+	@Column (name= "image")
 	private String image;
+	@Column (name= "alias")
 	private String alias;
+	@Column (name= "description")
 	private String description;
 	public Personnage(int id, String name, String image, String alias, String description) {
 		this.id = id;
