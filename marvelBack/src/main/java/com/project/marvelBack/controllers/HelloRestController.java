@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.project.marvelBack.dao.FilmRepository;
@@ -41,6 +42,10 @@ public class HelloRestController {
 	@GetMapping("/films/{id}")
 	public Film getFilmById(@PathVariable Long id) {
 		return filmrepository.findById(id).get();
+	}
+	@GetMapping("/films/")
+	public List<Film> getFilmByName(@RequestParam String name) {
+		return filmrepository.findByTitle(name);
 	}
 	@GetMapping("/personnages")
 	public List<Personnage> getPersonnages() {
