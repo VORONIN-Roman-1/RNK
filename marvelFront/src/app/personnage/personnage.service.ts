@@ -19,6 +19,15 @@ export class PersonnageService {
       catchError(this.handleError(`getPersonnages`, []))
     )
   }
+  // Retourne un personnage avec l'id passé en paramètre
+  
+  getPersonnage(id: number): Observable<Personnage> {
+    const url = `${this.personnageUrl}/${id}`;
+    return this.http.get<Personnage>(url).pipe(
+        tap(_ => this.log(`fetched personnage id=${id}`)),
+        catchError(this.handleError<Personnage>(`getPersonnage id=${id}`))
+        );
+  }      
   private log(log: string) {
     console.info(log);
   }
