@@ -44,12 +44,16 @@ public class HelloRestController {
 		return filmrepository.findById(id).get();
 	}
 	@GetMapping("/films/")
-	public List<Film> getFilmByName(@RequestParam String name) {
-		return filmrepository.findByTitle(name);
+	public List<Film> getFilmByName(@RequestParam String title) {
+		return filmrepository.findByTitle(title);
 	}
 	@GetMapping("/personnages")
 	public List<Personnage> getPersonnages() {
 		return personnagerepository.findAll();
+	}
+	@GetMapping("/personnages/")
+	public List<Personnage> getPersonnageByName(@RequestParam String name) {
+		return personnagerepository.findByName(name);
 	}
 	@GetMapping("/personnages/{id}")
 	public Personnage getPersonnageById(@PathVariable Long id) {
