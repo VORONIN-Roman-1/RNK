@@ -7,6 +7,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.lang.Nullable;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "personnage")
 public class Personnage {
@@ -17,27 +21,30 @@ public class Personnage {
 	private String name;
 	@Column(name = "image")
 	private String image;
-	@Column(name = "alias")
+	@Column(name = "truename")
 	private String alias;
-	@Column(name = "description")
-	private String description;
+	
+//	@JsonIgnore
+//	@Nullable
+//	@Column(name = "description")
+//	private String description= null;
 
 	// définir les constructeurs
-	public Personnage(Long id, String name, String image, String alias, String description) {
+	public Personnage(Long id, String name, String image, String alias) {
 		this.id = id;
 		this.name = name;
 		this.image = image;
 		this.alias = alias;
-		this.description = description;
+		
 	}
 
-	public Personnage(String name, String image, String alias, String description) {
+	public Personnage(String name, String image, String alias) {
 		this.name = name;
 		this.image = image;
 		this.alias = alias;
-		this.description = description;
+		
 	}
-
+	
 	public Personnage() {
 	}
 
@@ -75,20 +82,13 @@ public class Personnage {
 		this.alias = alias;
 	}
 
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
 	// définir toString()
 
 	@Override
 	public String toString() {
 
 		return "Film [id=" + id.longValue() + ", name=" + name + ", image=" + image + ", alias=" + alias
-				+ ", description= " + description + "]";
+				+ ", description= ";
 	}
 
 }
