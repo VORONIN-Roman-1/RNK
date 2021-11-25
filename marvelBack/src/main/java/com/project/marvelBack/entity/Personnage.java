@@ -12,25 +12,25 @@ import javax.persistence.Table;
 public class Personnage {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	@Column (name= "name")
+	private Long id;
+	@Column(name = "name")
 	private String name;
-	@Column (name= "image")
+	@Column(name = "image")
 	private String image;
-	@Column (name= "alias")
+	@Column(name = "alias")
 	private String alias;
-	@Column (name= "description")
+	@Column(name = "description")
 	private String description;
-	
+
 	// définir les constructeurs
-	public Personnage(int id, String name, String image, String alias, String description) {
+	public Personnage(Long id, String name, String image, String alias, String description) {
 		this.id = id;
 		this.name = name;
 		this.image = image;
 		this.alias = alias;
 		this.description = description;
 	}
-	
+
 	public Personnage(String name, String image, String alias, String description) {
 		this.name = name;
 		this.image = image;
@@ -40,14 +40,14 @@ public class Personnage {
 
 	public Personnage() {
 	}
-	
+
 	// définir les getters() & les setters()
-	
-	public int getId() {
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -83,11 +83,12 @@ public class Personnage {
 		this.description = description;
 	}
 	// définir toString()
-	
+
 	@Override
 	public String toString() {
-		
-	return "Film [id=" + id + ", name=" + name + ", image=" + image + ", alias=" + alias + ", description= " + description + "]";
+
+		return "Film [id=" + id.longValue() + ", name=" + name + ", image=" + image + ", alias=" + alias
+				+ ", description= " + description + "]";
 	}
-	
+
 }

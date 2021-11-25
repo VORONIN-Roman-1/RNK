@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.project.marvelBack.entity.Personnage;
 
 @Repository
-public interface PersonnageRepository extends JpaRepository<Personnage , Integer> {
+public interface PersonnageRepository extends JpaRepository<Personnage , Long> {
 	
 	public List<Personnage> findByName(String name);
 	

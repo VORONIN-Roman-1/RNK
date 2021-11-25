@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.project.marvelBack.entity.Film;
 
 @Repository
-public interface FilmRepository extends JpaRepository <Film, Integer> {
+public interface FilmRepository extends JpaRepository <Film, Long> {
 	
 	public List<Film> findByTitle (String title);
 	

@@ -13,7 +13,7 @@ public class Film {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private Long id;
 	
 	@Column(name = "title")
 	private String title;
@@ -27,7 +27,7 @@ public class Film {
 	// définir les constructeurs
 	public Film() {
 	}
-	public Film(int id, String title, String image, int year) {
+	public Film(Long id, String title, String image, int year) {
 		this.id = id;
 		this.title = title;
 		this.image = image;
@@ -40,10 +40,10 @@ public class Film {
 		this.year = year;
 	}
 	// définir les getters() & les setters()
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	public String getTitle() {
@@ -68,7 +68,7 @@ public class Film {
 	// définir toString()
 		@Override
 		public String toString() {
-			return "Film [id=" + id + ", title=" + title + ", image=" + image + ", year=" + year + "]";
+			return "Film [id=" + id.longValue()  + ", title=" + title + ", image=" + image + ", year=" + year + "]";
 		}
 	
 }
