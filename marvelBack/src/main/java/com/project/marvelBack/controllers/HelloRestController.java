@@ -35,6 +35,9 @@ public class HelloRestController {
 	public String sayHello() {
 		return "Hello spring Boot Rest World !";
 	}
+	
+	//FILMS
+	
 	@GetMapping("/films")
 	public List<Film> getFilms() {
 		return filmrepository.findAll();
@@ -45,15 +48,17 @@ public class HelloRestController {
 	}
 	@GetMapping("/films/")
 	public List<Film> getFilmByName(@RequestParam String title) {
-		return filmrepository.findByTitle(title);
+		return filmrepository.findByTitleContaining(title);
 	}
+	
+	//PERSONNAGES
 	@GetMapping("/personnages")
 	public List<Personnage> getPersonnages() {
 		return personnagerepository.findAll();
 	}
 	@GetMapping("/personnages/")
 	public List<Personnage> getPersonnageByName(@RequestParam String name) {
-		return personnagerepository.findByName(name);
+		return personnagerepository.findByNameContaining(name);
 	}
 	@GetMapping("/personnages/{id}")
 	public Personnage getPersonnageById(@PathVariable Long id) {

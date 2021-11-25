@@ -11,5 +11,6 @@ import com.project.marvelBack.entity.Personnage;
 public interface PersonnageRepository extends JpaRepository<Personnage , Long> {
 	
 	public List<Personnage> findByName(String name);
+	public List<Personnage> findByNameContaining(String name);
 	
 }
