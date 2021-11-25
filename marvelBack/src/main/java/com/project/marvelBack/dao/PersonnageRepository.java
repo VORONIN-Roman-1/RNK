@@ -13,6 +13,6 @@ public interface PersonnageRepository extends JpaRepository<Personnage , Long> {
 	
 	public List<Personnage> findByName(String name);
 	
-	public List<Film> findById (String id);
+	public Personnage findById (String id);
 	
 }
