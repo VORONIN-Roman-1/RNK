@@ -1,6 +1,5 @@
 package com.project.marvelBack.controllers;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.annotation.PostConstruct;
@@ -38,6 +37,10 @@ public class HelloRestController {
 	@GetMapping("/films")
 	public List<Film> getFilms() {
 		return filmrepository.findAll();
+	}
+	@GetMapping("/films/{id}")
+	public Film getFilmById(@PathVariable Long id) {
+		return filmrepository.findById(id).get();
 	}
 	@GetMapping("/personnages")
 	public List<Personnage> getPersonnages() {
