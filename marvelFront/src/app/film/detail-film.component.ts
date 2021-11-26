@@ -10,34 +10,16 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class DetailFilmComponent implements OnInit {
 
-    films!: Film[];
-  constructor(private filmService: FilmService) { }
+    film!: Film;
+  constructor( 
+      private route: ActivatedRoute,
+      private router : Router,private filmService: FilmService) { }
 
-  ngOnInit(): void {
-    this.getFilms();
+ 
+  ngOnInit() : void { 
+    let id = +this.route.snapshot.paramMap.get('id')! ;
+    this.filmService.getFilm(id).subscribe(film => this.film = film);
 }
-getFilms(): void {
-    this.filmService.getFilms()
-    .subscribe(films => this.films = films );
-    }
-    
-    
-        
-        
-    // constructor ( private route: ActivatedRoute,
-    //               private router : Router,
-    //               private filmService: FilmService )  {}
-
-    //               ngOnInit() : void { 
-    //                   let id = +this.route.snapshot.paramMap.get('id')! ;
-    //                   this.filmService.getFilms(id).subscribe(film => this.film = film);
-    //               }
-
-    //               goBack(): void {
-    //                 this.router.navigate(['/films']);
-                //}
-            
-
 
 
 }

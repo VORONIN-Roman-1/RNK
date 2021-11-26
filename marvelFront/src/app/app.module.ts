@@ -1,3 +1,4 @@
+import { AppRoutingModule } from './app-routing.module';
 import { PersonnageModule } from './personnage/personnage.module';
 import { FilmModule } from './film/film.module';
 
@@ -15,9 +16,10 @@ import { FilmService } from './film/film.service';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
+    AppRoutingModule,
     FilmModule,
-    PersonnageModule
+    PersonnageModule,
+    HttpClientModule,
   ],
   
   

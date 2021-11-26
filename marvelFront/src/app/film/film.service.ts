@@ -23,11 +23,12 @@ export class FilmService {
     )
   }
 
-//   getEmploye(id: number): Observable <Film> {
-//     const url = `${this.filmUrl/${id}`;
-//     return this.http.get<Film>(url).pipe(tap(_=> this.log(`fetched Film id=${id}`)),
-//     catchError(this.handleError<Employe>(`this.getFilms id=${id}`)));
-// }
+   getFilm(id: number): Observable <Film> {
+     const url = `${this.filmUrl}/${id}`;
+     return this.http.get<Film>(url).pipe(tap(_=> this.log(`fetched Film id=${id}`)),
+     catchError(this.handleError<Film>(`this.getFilms id=${id}`)));
+ }
+
   private log(log: string) {
     console.info(log);
   }
