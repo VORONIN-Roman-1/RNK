@@ -1,0 +1,205 @@
+
+
+///////////////----------------CONFIGURATION------------------------------------\\\\\\\\\\\\ 
+(seulement pour le GITBASH_ une configuration globale- (mais pas dans github CAR LE NAME choisis est seulement pour
+les utilisations dans le GITBASH, dans le GITHUB le nom d'usage peut etre différent attention!!!):
+
+//________name
+->git config --global user.name "Karo "
+
+//________email
+->git config --global user.email "johndoe@example.com"
+
+//________editor
+__________(cela permet de configurer de façon à ouvrir Notepad pour écrire des commentaires-lors du commit par exple; 
+___________apres avoir écrit le commentaire, ne pas oublier d'enregistrez et de fermer notepad)
+->git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+//________Vérifier les configurations précèdentes avec la commande:
+->git config --global --list
+
+
+///////////-----------------------Récupérer un dépôt GIT(repository) EN LOCAL sur la machine----------\\\\\\\\\\
+->git clone <url du dépôt git>
+
+/////////---------------------git commit regle
+Un commit est toujours sur le repository(dépôt) local !!!!!
+->git status
+->git add .
+->git status
+->git commit -m "[name-new-feature][nameDeveloper] text" = valide toutes les modification ajoutées avec GIT ADD;créer un nouveau point sur la branche
+->git push
+
+->git pull 
+(->git pull = "git flecth + git merge")
+
+//rebase=true
+->git config --global pull.rebase true 
+
+//////////_______________________SUPPRESSION DE FICHIER (de l'arbre de travail et de l'index)______________________\\\\\\
+->git rm -r "nom du fichier"
+
+//////Job:______________________  LES BRANCHES___________________
+
+
+/// Voir toutes les branches locales
+->git branch ( le * indique sur quelle branche on se trouve)
+
+/// add branch for new feature/ Création d'une branche (sur le dépôt local)
+->git branch "nom de la branche"
+
+/// Se déplacer sur autre branche/ Changer de branche 
+->git switch "nom de la branche"
+
+/// Possibilité de Créer une nouvelle branche ,et EN MEME TEMPS, se déplacer  dans celle-ci.
+(A utiliser avec précaution !!)
+->git checkout -b nom_de_branche  
+( ATTENTION:
+ il est préconisé de plutôt faire: git branch nom_de_branche puis -> git switch nom_de_branche.)
+
+/// SUPPRIMER UNE BRANCHE
+-Localement 
+->git branch -d "nom de la branche" OU ->git branch -D "nom de la branche" (-D est l'abbréviation de --delete --force qui permet la suppression peut importe si elle a été mergé ou pas)
+- ET DISTANTE !!
+->git push origin --delete "nom de la branche"
+- PUIS 
+ vous devrez exécuter la commande suivante sur tous les autres ordinateurs(collegues de travail) afin de propager le changement : 
+->git fetch --all --prune  (toutes les branches "individuelles" poussées par les autres collegues mais non partagées n'apparaitront plus dans le gitBASH)
+
+
+///---------------------------------!!!!!!!!!!SUPER COMMANDES!!!!!!!!!!-----------------------------\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// "Pousser/pusher" la branche crée localement sur le dépôt distant
+->git push --set-upstream origin "nom de la branche" (Attention !!!! faire avant: git branch "nom de la branche")
+OU ???-> git push origin "nom de la branche"
+!!!git Push origin "branch"
+en tirant, vous devez faire:
+git pull Origin <branch>
+
+Mais si vous le faites:
+git Push --set-upstream origin "branch"
+alors, en tirant, il suffit de faire:
+git pull
+
+Ainsi, ajouter dans --set-upstream vous évite de spécifier quelle branche vous souhaitez extraire à chaque fois que vous faites git pull.
+
+
+// Accéder à une branche distante créee par un camarade/collegue 
+->git branch --set-upstream-to=origin/"nom de la branche" "nom de la branche" (Attention !!! faire avant: git branch "nom de la branche")
+
+// Voir toutes les branches distantes
+->git branch -r
+
+// Voir TOUTES les branches ( locales et distantes)
+->git branch -a
+
+
+
+///---------------------FUSION/>CONFLIT de branches--------------------------------\\\\\\\\\\\\\\
+Pour l'instant passer par l'interface graphique de Github
+
+->git merge origin/"nom_de_la_branche"( on fusionne avec la branche sur laquelle on se situe, si nécessaire faire avant un -> git switch "nomdebranche")
+ATTENTION! faire apres-> git push 
+(pour pousser sur la branche distante fusionnée; en fait avec ->git merge, je n'ai fait qu'une fusion au niveau local, encore faut-il la répercuter sur la branche distante: d'où un ->git push)
+
+
+/////---------------------------!!!!!!!! SUPER MEGA COMMANDES!!!!!!!!!!!!!!!!--------------------------\\\\\\\\\\\\\\\\\\\\\\\
+
+//______Annulation d'un GIT MERGE action, revenir au commit précèdent________\\
+
+/ 1) D'abord trouver le dernier identifiant de commit
+ou plutôt connaître l'ID de validation du commit avant notre fusion sur notre référentiel distant: 
+->git reflog 
+(ou git log, mais git reflog envoie une sortie des id des commits plus facile à lire)
+
+/ 2) Puis on revient au commit spécifié(en annulant le merge):
+->git reset --merge ID_Commit   
+
+
+---EXEMPLE: 
+
+------------ ->git reflog ,   on a : ac7188c HEAD@{6}: commit: feat: Push example code for innerText and innerHTML tutorial
+                                     a9fdeb5 HEAD@{7}: commit (initial): feat: Merge dev-fix-7 into main 
+                                            Cette commande nous indique que le dernier commit a le hachage a9fdeb5.
+                                            Nous utilisons ce ID pour annuler le commit de fusion.
+
+------------ ->git reset --merge a9fdeb5 ,  Cette commande réinitialise notre référentiel à l'état où il se trouvait dans le commit a9fdeb5
+(L'indicateur –merge réinitialise un index et met à jour tous les fichiers qui sont différents entre l'état actuel de votre référentiel et le HEAD).
+
+
+
+
+  
+
+
+
+
+//(L'option -u indique à git de créer toutes les informations nécessaires pour rendre la branche traçable)
+/// (Le repository distant se nomme PAR DEFAUT Origin !!!)
+->git push -u origin "ma_branche_de_developpement"
+
+
+
+
+//daily rebase
+git checkout main
+git pull --rebase origin main
+git checkout name-new-feature
+git rebase main
+
+
+
+//merge branch
+git checkout main
+git merge --no-ff name-new-feature
+git branch -d name-new-feature
+OR
+Pull request
+
+
+
+->git log --oneline --graph  :  pour voir les differents commits ( sous forme de graphe)
+
+git cherry-pick ??????
+
+
+
+///___________ NETTOYER SON REPERTOIRE DE TRAVAIL____________\\\\
+ELIMINER, SUPRIMER les fichiers ajoutés sur le repertoire de travail mais non suivis ou plus généralement tous les fichiers non-suivis(c'est à dire pas commités- git add/commit )
+-> git clean
+Mais avant utiliser:
+-> git clean -n   
+qui va montrer ce qui sera fait ( -n signifie: "fais-le à blanc et montre moi ce qui serait supprimé " )
+Et apres nettoyer définitivement: ( -f: forcer)
+-> git clean -f
+
+
+
+////____________________ REMISAGE ET NETTOYAGE__________________\\\\\\\\\\\\\
+git stash???
+
+
+////________DUPLIQUER UN PROJET SUR GITHUB ( faire un autre " repository")__________\\\\
+dans l'interface sur GITHUB, voir onglet "FORK"
+
+( ATTENTION "FORKer" n'est pas "CLONer" !!!!! on duplique c'est tout!)
+
+
+
+
+////------------------FICHIERS INDISPENSABLES-------------------\\\\\\\\\\\\\\\\\\\\\\\\
+1)  .gitignore  : renseigne le chemin de chaque fichier que l'on ne veut pas commit(quand on fait un GIT ADD. , puis GIT PUSH)
+ex: /MotDePasse.txt (Git ne va pas commit MotDePasse.txt), on va seulement écrire dans le fichier .gitignore: /MotDePasse.txt
+
+2) README.md  : renseigne toutes les informations utiles au projet
+
+
+
+sources:
+https://github.com/JustFS/cours-github/blob/master/versionner.png
+
+https://github.com/JustFS/cours-github/blob/team_work/travailler_en_equipe.png
+
+https://buzut.net/cours/versioning-avec-git/branching#Rebase-l%E2%80%99alternative-au-merge
+
+https://www.youtube.com/watch?v=yqA4Q6jHnfc&t=0s (video-tuto)
