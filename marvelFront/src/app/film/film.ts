@@ -3,6 +3,7 @@ export class Film {
     title: string;
     image: string;
     year: number;
+    
     constructor(
         id: number,
         title: string,

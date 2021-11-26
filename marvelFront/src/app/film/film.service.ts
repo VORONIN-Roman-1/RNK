@@ -9,9 +9,11 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable()
 export class FilmService {
+  
   constructor(private http: HttpClient) { }
 
   private filmUrl = 'http://localhost:8080/films';
+
 
   // Retourne tous les films
   getFilms(): Observable<Film[]> {
@@ -20,6 +22,12 @@ export class FilmService {
       catchError(this.handleError(`getFilms`, []))
     )
   }
+
+//   getEmploye(id: number): Observable <Film> {
+//     const url = `${this.filmUrl/${id}`;
+//     return this.http.get<Film>(url).pipe(tap(_=> this.log(`fetched Film id=${id}`)),
+//     catchError(this.handleError<Employe>(`this.getFilms id=${id}`)));
+// }
   private log(log: string) {
     console.info(log);
   }

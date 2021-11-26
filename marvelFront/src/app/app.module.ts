@@ -20,7 +20,7 @@ import { FilmService } from './film/film.service';
     PersonnageModule
   ],
   
-  providers: [FilmService],
+  
   bootstrap: [AppComponent]
 })
 export class AppModule { }
