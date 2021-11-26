@@ -7,8 +7,8 @@ import { Routes } from '@angular/router';
 //Les routes du module Employe
 const filmsRoutes: Routes = [
 
-    { path: 'films', component:DetailFilmComponent  },
-    { path: 'film/:id', component: DetailFilmComponent }
+  //  { path: 'films', component:DetailFilmComponent  },
+   // { path: 'film/:id', component: DetailFilmComponent }
 ];
 
 @NgModule ({
