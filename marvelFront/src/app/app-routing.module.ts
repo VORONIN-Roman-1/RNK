@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { DetailFilmComponent } from "./film/detail-film.component";
+import { DetailPersonnageComponent } from "./personnage/detail-personnage.component";
 
 
 
@@ -8,6 +9,7 @@ const appRoutes: Routes = [
 
     { path: 'films', component:DetailFilmComponent  },
     { path: 'film/:id', component: DetailFilmComponent },
+    { path: 'personnage/:id', component: DetailPersonnageComponent },
     { path: '', redirectTo : 'films', pathMatch: 'full'}
 ];
 
