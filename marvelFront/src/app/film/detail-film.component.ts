@@ -13,12 +13,16 @@ export class DetailFilmComponent implements OnInit {
     film!: Film;
   constructor( 
       private route: ActivatedRoute,
-      private router : Router,private filmService: FilmService) { }
+      private router : Router, private filmService: FilmService) { }
 
  
   ngOnInit() : void { 
     let id = +this.route.snapshot.paramMap.get('id')! ;
     this.filmService.getFilm(id).subscribe(film => this.film = film);
+}
+
+goBack(): void {
+    this.router.navigate(['/films']);
 }
 
 

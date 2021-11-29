@@ -22,6 +22,7 @@ INSERT INTO `personnage` VALUES
 	(3,'Pepper Potts','photoPepperPotts','Pepper Potts'),
     (4, 'Hulk','photoHulk', 'Bruce Banner'),
     (5, 'Nick Fury','photoNickFury','Nick Fury'),
+    (6, 'Yelena Belova','photoYelenaBelova','Yelena Belova'),
     (7, 'Black Widow','photoBlackWidow','Natasha Romanoff'),
     (8, 'Thor','photoThor','Thor'),
     (9, 'Odin','photoOdin','Odin'),

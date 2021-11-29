@@ -1,14 +1,17 @@
+
 import { DetailFilmComponent } from './detail-film.component';
 
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
+import { ListFilmsComponent } from './list-films.component';
 
 //Les routes du module Employe
 const filmsRoutes: Routes = [
 
-  //  { path: 'films', component:DetailFilmComponent  },
-   // { path: 'film/:id', component: DetailFilmComponent }
+    { path: 'films', component: ListFilmsComponent  },
+    { path: 'film/:id', component: DetailFilmComponent },
+  
 ];
 
 @NgModule ({

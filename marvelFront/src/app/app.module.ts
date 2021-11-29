@@ -10,9 +10,11 @@ import { AppComponent } from './app.component';
 import { FilmService } from './film/film.service';
 
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -6,8 +6,7 @@ import { DetailFilmComponent } from "./film/detail-film.component";
 
 const appRoutes: Routes = [ 
 
-    { path: 'films', component:DetailFilmComponent  },
-    { path: 'film/:id', component: DetailFilmComponent },
+    
     { path: '', redirectTo : 'films', pathMatch: 'full'}
 ];
 
