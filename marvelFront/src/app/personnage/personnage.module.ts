@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { DetailPersonnageComponent } from './detail-personnage.component';
+import { ListPersonnageComponent } from './list-personnage.component';
 import { PersonnageService } from './personnage.service';
 
 
@@ -11,7 +12,8 @@ import { PersonnageService } from './personnage.service';
     ],
 
     declarations: [
-        DetailPersonnageComponent
+        DetailPersonnageComponent, 
+        ListPersonnageComponent
     ],
 
     providers: [
