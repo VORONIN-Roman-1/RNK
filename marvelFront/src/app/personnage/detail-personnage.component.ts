@@ -20,6 +20,9 @@ export class DetailPersonnageComponent implements OnInit {
     let id = +this.route.snapshot.paramMap.get('id')! ;
     this.personnageService.getPersonnage(id).subscribe(personnage => this.personnage = personnage);
 }
+goBack(): void {
+    this.router.navigate(['/personnages/']);
+}
 
 
 }
