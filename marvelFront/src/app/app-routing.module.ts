@@ -10,13 +10,10 @@ import { ListPersonnageComponent } from "./personnage/list-personnage.component"
 
 const appRoutes: Routes = [ 
 
-
-    
-
     //{ path: 'films', component: ListFilmsComponent  },
    // { path: 'film/:id', component: DetailFilmComponent },
-    { path: 'personnage/:id', component: DetailPersonnageComponent },
-    { path: 'personnages', component: ListPersonnageComponent },
+   // { path: 'personnage/:id', component: DetailPersonnageComponent },
+   // { path: 'personnages', component: ListPersonnageComponent },
 
     { path: '', redirectTo : 'films', pathMatch: 'full'}
 ];

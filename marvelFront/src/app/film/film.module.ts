@@ -19,7 +19,9 @@ import { ListFilmsComponent } from './list-films.component';
         DetailFilmComponent
 
     ],
-    providers: [FilmService]
+    providers: [
+        FilmService
+    ]
 })
 
 export class FilmModule { }
