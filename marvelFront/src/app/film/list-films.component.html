@@ -1,8 +1,38 @@
+<div class="carousel" id="demo-carousel">
+    <a class="carousel-item" href="#one!"><img src="https://picsum.photos/200/300?random=1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://picsum.photos/200/300?random=2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://picsum.photos/200/300?random=3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://picsum.photos/200/300?random=4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300?random=5"></a>
+  </div>
+  <div   class="carousel" id="demo-carousel">
+    
+     <!-- <a *ngFor='let film of films' class="carousel-item" href="#one!">hello</a>  -->
+    <a class="carousel-item" href="#two!"> MDN<img src="https://picsum.photos/200/300"> </a>
+    <a class="carousel-item" href="#two!"> MDN<img src="https://picsum.photos/200/300"> </a>
+    <a class="carousel-item" href="#three!">NNNJI</a>
+    <a class="carousel-item" href="#four!"><img src="https://picsum.photos/200/300"></a>
+    <a class="carousel-item" href="#five!"><img src="https://picsum.photos/200/300"></a>
+    <a *ngFor='let film of films'  class="carousel-item"  href="film/{{film.id}}"><img src="https://picsum.photos/200/300?random={{film.id}}"></a> 
+  </div>
+  <!-- <a *ngFor='let film of films' href="#one!">DDD<img src="https://picsum.photos/200/300"></a> -->
+  <!-- <a *ngFor='let film of films' class="carousel-item" href="#one!">{{film.title}}<img src="https://picsum.photos/200/300?random={{film.id}}"></a>  -->
+  <a *ngFor='let film of films'  href="film/{{film.id}}"><img src="https://picsum.photos/200/300?random={{film.id}}"></a> 
 <div *ngFor='let film of films'  class="col s6 m4">
     <div class="card horizontal" (click)="selectFilm(film)" filmPreSelect="red" >
         <div class="card-image">
-            <img [src]="film.image">
-            
+            <!-- <img [src]="film.image"> -->
+            <img src = "https://picsum.photos/200/300?ranom={{film.id}}">
         </div>
         <div class="card-stacked"> 
             <div class="card-content">

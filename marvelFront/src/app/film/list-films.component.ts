@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-
+//  import * as M from "../../assets/materialize/js/materialize.min.js";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Film } from "./film";
 import { FilmService } from "./film.service";
