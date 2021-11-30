@@ -6,6 +6,7 @@ import { NgModule } from '@angular/core';
 import { DetailPersonnageComponent } from './detail-personnage.component';
 import { ListPersonnageComponent } from './list-personnage.component';
 import { PersonnageService } from './personnage.service';
+import { PersonnageSearchComponent } from './search-personnage.component';
 
 
 @NgModule({
@@ -19,6 +20,8 @@ import { PersonnageService } from './personnage.service';
     declarations: [
         DetailPersonnageComponent, 
         ListPersonnageComponent,
+        PersonnageSearchComponent
+        
     ],
 
     providers: [

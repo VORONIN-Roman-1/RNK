@@ -1,6 +1,8 @@
+<div class="row"> <br>
+  <personnage-search></personnage-search>
+
 <div *ngFor="let personnage of personnages" class="col s6 m4">
   <div class="card horizontal" (click)="selectPersonnages(personnage)" personnagePreSelect="#616161">
-
 
     <div class="card-image">
       <img [src]="personnage.image">

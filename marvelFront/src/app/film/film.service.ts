@@ -15,6 +15,16 @@ export class FilmService {
   private filmUrl = 'http://localhost:8080/films';
 
 
+  searchFilms(term: string): Observable<Film[]>{
+    if (!term.trim()){
+        return of([]);
+    }
+    return this.http.get<Film[]>( `${this.filmUrl}/?title=${term}`).pipe(tap(_ => this.log(`found films matching "${term}"`)),
+        catchError(this.handleError<Film[]>('searchFilms', []))
+    );
+
+}
+
   // Retourne tous les films
   getFilms(): Observable<Film[]> {
     return this.http.get<Film[]>(this.filmUrl).pipe(

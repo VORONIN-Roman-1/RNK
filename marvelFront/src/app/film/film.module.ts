@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FilmRoutingModule } from './film-routing.module';
 import { ListFilmsComponent } from './list-films.component';
-
+import { FilmSearchComponent } from './search-film.component';
 
 @NgModule({
 
@@ -16,7 +16,8 @@ import { ListFilmsComponent } from './list-films.component';
     ],
     declarations: [
         ListFilmsComponent,
-        DetailFilmComponent
+        DetailFilmComponent,
+        FilmSearchComponent
 
     ],
     providers: [
