@@ -22,6 +22,11 @@ export class ListPersonnageComponent implements OnInit {
         this.personnageService.getPersonnages()
         .subscribe(personnages => this.personnages = personnages );
 }
+selectPersonnages(personnage: Personnage) {
+  alert("Vous avez cliqué sur le personnage : " + personnage.name)
+  let link = ['/personnage', personnage.id];
+  this.router.navigate(link);
+}
 
 
 }

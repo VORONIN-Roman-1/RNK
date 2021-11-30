@@ -1,5 +1,3 @@
-hello list-film
-
 <div *ngFor='let film of films'  class="col s6 m4">
     <div class="card horizontal" (click)="selectFilm(film)" filmPreSelect="red" >
         <div class="card-image">
@@ -9,7 +7,7 @@ hello list-film
         <div class="card-stacked"> 
             <div class="card-content">
                 <span >{{film.title}}</span>
-                <p><small>{{film.year | date : "dd/MM/yyyy"}}</small></p>
+                <p><small>{{film.year}}</small></p>
                 
             </div>
         </div>

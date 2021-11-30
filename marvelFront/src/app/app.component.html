@@ -10,24 +10,14 @@
   <div class="nav-wrapper black">
       <a href="#!" class="brand-logo"><i class="material-icons"></i>Guide Marvel Studios</a>
       <ul class="right hide-on-med-and-down">
-          <li><a href="#!">Accueil </a></li>
-          <li><a href="#!">Films </a></li>
-          <li><a href="#!">Personnages </a></li>
+          <li><a href="./films">Accueil </a></li>
+          <li><a href="./films">Films </a></li>
+          <li><a href="./personnages">Personnages </a></li>
           
       </ul>
   </div>
 </nav>
 <router-outlet></router-outlet>
-
-
-<div *ngFor='let film of films'>
-  <div>
-    <span>{{film.id}}</span>
-    <p><small>{{film.title}}</small></p>
-    <p><small>{{film.year}}</small></p>
-  </div>
-</div>
-
 
 <footer class="page-footer black">
   <div class="footer-copyright black">

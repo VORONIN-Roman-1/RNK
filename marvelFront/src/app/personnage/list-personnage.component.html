@@ -1,10 +1,16 @@
+<div *ngFor="let personnage of personnages" class="col s6 m4">
+  <div class="card horizontal" (click)="selectPersonnages(personnage)" personnagePreSelect="#616161">
 
 
-  <div *ngFor='let personage of personnages'>
-    <div>
-      <span>{{personage.name}}</span>
-      <p><small>{{personage.alias}}</small></p>
-      
+    <div class="card-image">
+      <img [src]="personnage.image">
     </div>
-  </div>
-  
+    <div class="card-stacked">
+      <div class="card-content">
+        <p>{{ personnage.name }}</p>
+        <p><small>{{personnage.alias}}</small></p>
+      </div>
+
+    </div>
+</div>
+</div>

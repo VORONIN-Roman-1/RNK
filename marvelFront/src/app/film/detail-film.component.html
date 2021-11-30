@@ -1,7 +1,27 @@
-hello
-<body>
-    <tr>
-      <td>Titre de film </td>
-      <td><strong>{{ film.title }}</strong></td>
-    </tr>
-  </body>
+<div *ngIf="film" class="row">
+    <div class="col s12 m8 offset-m2">
+        <h2 class="header center">{{ film.title }}</h2>
+        <div class="card horizontal hoverable">
+            <div class="card-image">
+                <img [src]="film.image">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <table class="bordered striped">
+                        <tbody>
+                          <tr>
+                            <td>Titre de film : </td>
+                            <td><strong>{{ film.title }}</strong></td>
+                            <td>Année de sortie : </td>
+                            <td><strong>{{ film.year }}</strong></td>
+                          </tr>    
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card-action">
+                    <a (click)="goBack()" class="waves-effect waves-light btn black">Retour</a>
+                </div>                
+            </div>
+        </div>
+    </div>
+</div>  
