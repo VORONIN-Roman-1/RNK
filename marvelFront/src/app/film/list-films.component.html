@@ -10,19 +10,3 @@
         </ng-container>
     </a>
 </div>
-<a *ngFor='let film of films' href="film/{{film.id}}"><img src="https://picsum.photos/200/300?image={{film.id}}"></a>
-<div *ngFor='let film of films'   class="col s6 m4">
-    <div class="card horizontal" (click)="selectFilm(film)" filmPreSelect="red">
-        <div class="card-image">
-            <!-- <img [src]="film.image"> -->
-            <img src="https://picsum.photos/200/300?ranom={{film.id}}">
-        </div>
-        <div class="card-stacked">
-            <div class="card-content">
-                <span>{{film.title}}</span>
-                <p><small>{{film.year}}</small></p>
-
-            </div>
-        </div>
-    </div>
-</div>
