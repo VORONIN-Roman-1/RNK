@@ -28,7 +28,7 @@ export class ListFilmsComponent implements OnInit {
     }
 
     selectFilm (film : Film){
-        alert("vous avez cliqué sur le film : "+ film.title)
+        // alert("vous avez cliqué sur le film : "+ film.title)
         let link = [ '/film', film.id];
         this.router.navigate(link);
       }
