@@ -21,6 +21,25 @@ export class PersonnageService {
     );
 
 }
+  updatePersonnage(personnage: Personnage): Observable<Personnage> {
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    };
+    return this.http.put<Personnage>(this.personnageUrl, personnage, httpOptions).pipe(
+      tap(_ => this.log(`updated personnage id=${personnage.id}`)),
+      catchError(this.handleError<any>('updatedPersonnage'))
+    );
+  }
+  deletePersonnage(personnage: Personnage): Observable<Personnage> {
+    const url = `${this.personnageUrl}/${personnage.id}`;
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    };
+    return this.http.delete<Personnage>(url, httpOptions).pipe
+      (tap(_ => this.log(`delete personnage id=${personnage.id}`)),
+        catchError(this.handleError<Personnage>('deleteFilm'))
+      )
+  }
 
   // Retourne tous les personnages
   getPersonnages(): Observable<Personnage[]> {

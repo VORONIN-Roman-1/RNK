@@ -22,7 +22,25 @@ export class FilmService {
     return this.http.get<Film[]>( `${this.filmUrl}/?title=${term}`).pipe(tap(_ => this.log(`found films matching "${term}"`)),
         catchError(this.handleError<Film[]>('searchFilms', []))
     );
-
+}
+  updateFilm(film: Film): Observable<Film> {
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    };
+    return this.http.put<Film>(this.filmUrl, film, httpOptions).pipe(
+      tap(_ => this.log(`updated film id=${film.id}`)),
+      catchError(this.handleError<any>('updatedFilm'))
+    );
+  }
+  deleteFilm(film: Film): Observable<Film> {
+    const url = `${this.filmUrl}/${film.id}`;
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    };
+    return this.http.delete<Film>(url, httpOptions).pipe
+      (tap(_ => this.log(`delete film id=${film.id}`)),
+        catchError(this.handleError<Film>('deleteFilm'))
+      )
 }
 
   // Retourne tous les films

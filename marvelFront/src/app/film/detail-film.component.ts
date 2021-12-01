@@ -25,9 +25,12 @@ export class DetailFilmComponent implements OnInit {
 goBack(): void {
     this.router.navigate(['/films']);
 }
+update(film: Film) {
+    this.filmService.updateFilm(film).subscribe(() => this.goBack());
+}
 
-
-
-
+delete(film: Film)  {
+    this.filmService.deleteFilm(film).subscribe(_ => this.goBack());
+    }
 
 }
