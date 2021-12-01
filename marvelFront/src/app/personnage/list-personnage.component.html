@@ -3,12 +3,12 @@
 
 <div *ngFor="let personnage of personnages" class="col s6 m4">
   <div class="card horizontal" (click)="selectPersonnages(personnage)" personnagePreSelect="#616161">
-
+    <a class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">forward</i></a>
     <div class="card-image">
       <img [src]="personnage.image">
     </div>
     <div class="card-stacked">
-      <div class="card-content"><<ng-content select="list-personnage"></ng-content>
+      <div class="card-content">
         <p>{{ personnage.name }}</p>
         <p><small>{{personnage.alias}}</small></p>
       
