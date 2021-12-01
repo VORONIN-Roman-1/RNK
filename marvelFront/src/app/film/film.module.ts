@@ -1,3 +1,4 @@
+import { PersonnageModule } from './../personnage/personnage.module';
 
 import { DetailFilmComponent } from './detail-film.component';
 import { FilmService } from './film.service';
@@ -12,11 +13,13 @@ import { ListFilmsComponent } from './list-films.component';
 
     imports: [
         CommonModule,
-        FilmRoutingModule
+        FilmRoutingModule,
+        PersonnageModule
     ],
     declarations: [
         ListFilmsComponent,
         DetailFilmComponent
+        
 
     ],
     providers: [

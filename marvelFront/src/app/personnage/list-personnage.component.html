@@ -6,9 +6,10 @@
       <img [src]="personnage.image">
     </div>
     <div class="card-stacked">
-      <div class="card-content">
+      <div class="card-content"><<ng-content select="list-personnage"></ng-content>
         <p>{{ personnage.name }}</p>
         <p><small>{{personnage.alias}}</small></p>
+      
       </div>
 
     </div>
