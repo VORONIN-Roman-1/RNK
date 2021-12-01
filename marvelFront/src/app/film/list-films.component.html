@@ -1,9 +1,13 @@
+<div class="row"> <br>
+    <film-search></film-search>
+
 <div *ngFor='let film of films'  class="col s6 m4">
     <div class="card horizontal" (click)="selectFilm(film)" filmPreSelect="red" >
         <div class="card-image">
             <img [src]="film.image">
             
         </div>
+        
         <div class="card-stacked"> 
             <div class="card-content">
                 <span >{{film.title}}</span>

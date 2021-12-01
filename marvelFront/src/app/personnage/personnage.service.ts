@@ -12,6 +12,16 @@ export class PersonnageService {
 
   private personnageUrl = 'http://localhost:8080/personnages';
 
+  searchPersonnages(term: string): Observable<Personnage[]>{
+    if (!term.trim()){
+        return of([]);
+    }
+    return this.http.get<Personnage[]>( `${this.personnageUrl}/?name=${term}`).pipe(tap(_ => this.log(`found personnages matching "${term}"`)),
+        catchError(this.handleError<Personnage[]>('searchPersonnages', []))
+    );
+
+}
+
   // Retourne tous les personnages
   getPersonnages(): Observable<Personnage[]> {
     return this.http.get<Personnage[]>(this.personnageUrl).pipe(
