@@ -28,7 +28,7 @@ INSERT INTO `film` VALUES
 (11, 'Avengers: L Ere d Ultron', 'Avengers2.jpg' , '2015'),                 
 (12, 'Ant-Man', 'Ant-Man.jpg', '2015'),                                    
 (13, 'Captain America: Civil War', 'CaptainAmerica3.jpg', '2016'),                
-(14, 'Doctor Strange','DoctorStrange','2016'),                       
+(14, 'Doctor Strange','DoctorStrange.jpg','2016'),                       
 (15,'Les Gardiens de la Galaxie Vol.2', 'Gardiens2.jpg', '2017'),         
 (16,'Spider-Man: Homecoming', 'Spider-Man.jpg', '2017'),                    
 (17, 'Thor : Ragnarok', 'Thor3.jpg', '2017'),                           
