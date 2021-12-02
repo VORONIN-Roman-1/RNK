@@ -1,4 +1,6 @@
 
+(considérer Git comme un utilitaire de gestion des chronologies!!!)
+
 
 ///////////////----------------CONFIGURATION------------------------------------\\\\\\\\\\\\ 
 (seulement pour le GITBASH_ une configuration globale- (mais pas dans github CAR LE NAME choisis est seulement pour
@@ -32,6 +34,17 @@ Un commit est toujours sur le repository(dépôt) local !!!!!
 
 ->git pull 
 (->git pull = "git flecth + git merge")
+
+
+/////------------------------INVERSION D'UN COMMIT (ANNULATION VERS L'AVANT)----------------\\\\\\\\\\\
+->git revert <commit> 
+
+(permet d'inverser un commit, 
+Cette commande va défaire ce qui avait été fait au moment du <commit> en créant un nouveau commit. 
+Cela n'altère pas l'historique mais va ajouter un nouveau commit d'inversion 
+(ex:les lignes ajoutées seront supprimées, les fichiers supprimés seront recréés...).
+AINSI, GIT NE PERD PAS L'HISTORIQUE !!!) 
+
 
 //rebase=true
 ->git config --global pull.rebase true 
