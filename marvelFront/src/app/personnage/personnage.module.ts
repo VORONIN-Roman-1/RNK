@@ -27,7 +27,6 @@ import { PersonnageSearchComponent } from './search-personnage.component';
     providers: [
         PersonnageService
     ],
-
     exports: [
         ListPersonnageComponent
     ]
