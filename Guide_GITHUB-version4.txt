@@ -1,5 +1,5 @@
 
-(considérer Git comme un utilitaire de gestion des chronologies!!!)
+(CONSIDERER Git comme un utilitaire de gestion des chronologies!!!)
 
 
 ///////////////----------------CONFIGURATION------------------------------------\\\\\\\\\\\\ 
