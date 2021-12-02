@@ -1,0 +1,2 @@
+TRUNCATE TABLE `film`;
+TRUNCATE TABLE `personnage`;
