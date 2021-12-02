@@ -1,3 +1,5 @@
+import { PersonnageModule } from './../personnage/personnage.module';
+
 import { DetailFilmComponent } from './detail-film.component';
 import { FilmService } from './film.service';
 
@@ -13,6 +15,7 @@ import { FilmSearchComponent } from './search-film.component';
 
         CommonModule,
         FilmRoutingModule,
+        PersonnageModule
 
     ],
 
