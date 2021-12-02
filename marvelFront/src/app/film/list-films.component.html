@@ -1,9 +1,8 @@
 <div class="carousel" id="demo-carousel">
     <a class="carousel-item" href="film/{{i+1}}" *ngFor="let film of films;let i = index  let last = last">
         {{film.title}}
-        <img src="https://picsum.photos/200/300?image={{i+1}}" />
+        <img src="../../assets/imagesFilms/{{film.image}}" />
         <ng-container *ngIf="last">
-            HELLO
             <ng-container *ngIf="condition">
                 {{getCarousel()}}
             </ng-container>
@@ -18,8 +17,7 @@
         <div class="card horizontal" (click)="selectFilm(film)" filmPreSelect="red">
             <a class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">forward</i></a>
             <div class="card-image">
-                <!-- <img [src]="film.image"> -->
-                <img src="https://picsum.photos/200/300?image={{film.id}}" />
+                <img src="../../assets/imagesFilms/{{film.image}}" />
             </div>
 
             <div class="card-stacked">
