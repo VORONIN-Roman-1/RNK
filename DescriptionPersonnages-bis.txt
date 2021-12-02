@@ -2,8 +2,8 @@ LISTE DES FILMS (27):
 PERSONNAGES + (nombre de PERSONNAGES).
 
 PHASE I:
-1_ Iron Man:                                     Iron Man, War Machine, Pepper Potts. (3)
-2_ L'incroyable Hulk :                           Hulk, Iron Man, Nick Fury. (3)
+1_ Iron Man:                                     Iron Man(*0), War Machine(*1), Pepper Potts(*2). (=3)
+2_ L'incroyable Hulk :                           Hulk(*3), Iron Man(0), Nick Fury(*4). (=3)
 3_ Iron Man 2 :                                  Iron Man, War Machine, Pepper Potts, Black Widow, Nick Fury. (5).
 4_ Thor:                                         Thor, Odin, Jane Foster, Heimdall, Loki, Hawkeye, Nick Fury. (7)
 5_ Captain America: First Avenger :              Captain America, Le Soldat de l'hiver, Nick Fury. (3).
