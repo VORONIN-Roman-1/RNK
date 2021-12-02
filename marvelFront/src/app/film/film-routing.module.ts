@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 import { Routes } from '@angular/router';
 import { ListFilmsComponent } from './list-films.component';
 
-//Les routes du module Employe
+//Les routes du module Film
 const filmsRoutes: Routes = [
 
     { path: 'films', component: ListFilmsComponent  },

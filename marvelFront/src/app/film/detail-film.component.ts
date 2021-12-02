@@ -1,6 +1,7 @@
+import { Personnage } from './../personnage/personnage';
 import { FilmService } from './film.service';
 import { Film } from './film';
-import { Component, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from "@angular/core";
 
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -24,6 +25,12 @@ export class DetailFilmComponent implements OnInit {
 goBack(): void {
     this.router.navigate(['/films']);
 }
+update(film: Film) {
+    this.filmService.updateFilm(film).subscribe(() => this.goBack());
+}
 
+delete(film: Film)  {
+    this.filmService.deleteFilm(film).subscribe(_ => this.goBack());
+    }
 
 }

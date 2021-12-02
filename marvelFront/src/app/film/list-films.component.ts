@@ -41,9 +41,9 @@ export class ListFilmsComponent implements OnInit, AfterViewInit {
         });
     }
 
-    selectFilm(film: Film) {
-        alert("vous avez cliqué sur le film : " + film.title)
-        let link = ['/film', film.id];
+    selectFilm (film : Film){
+        let link = [ '/film', film.id];
+
         this.router.navigate(link);
     }
 }

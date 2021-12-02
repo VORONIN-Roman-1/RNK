@@ -23,6 +23,13 @@ export class DetailPersonnageComponent implements OnInit {
 goBack(): void {
     this.router.navigate(['/personnages/']);
 }
+update(personnage: Personnage) {
+    this.personnageService.updatePersonnage(personnage).subscribe(() => this.goBack());
+}
+
+delete(personnage: Personnage)  {
+    this.personnageService.deletePersonnage(personnage).subscribe(_ => this.goBack());
+    }
 
 
 }

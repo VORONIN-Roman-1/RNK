@@ -10,16 +10,21 @@
                     <table class="bordered striped">
                         <tbody>
                           <tr>
+                            
                             <td>Titre de film : </td>
                             <td><strong>{{ film.title }}</strong></td>
                             <td>Année de sortie : </td>
                             <td><strong>{{ film.year }}</strong></td>
+                            
                           </tr>    
                         </tbody>
                     </table>
                 </div>
                 <div class="card-action">
                     <a (click)="goBack()" class="waves-effect waves-light btn black">Retour</a>
+                    <a (click)="delete(film)"class="waves-effect waves-light btn black">Modifier</a>
+                    <a (click)="delete(film)"class="waves-effect waves-light btn black">Supprimer</a>
+
                 </div>                
             </div>
         </div>
