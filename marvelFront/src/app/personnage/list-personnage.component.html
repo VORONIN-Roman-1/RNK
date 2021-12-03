@@ -2,7 +2,7 @@
   <personnage-search></personnage-search>
 
 <div *ngFor="let personnage of personnages" class="col s6 m4">
-  <div class="card horizontal card-panel #616161 grey darken-2" (click)="selectPersonnages(personnage)" personnagePreSelect="#616161">
+  <div class="card horizontal card-panel " (click)="selectPersonnages(personnage)" personnagePreSelect="#616161">
     <a class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">forward</i></a>
     <div class="card-image">
         <img src="../../assets/imagesPersonnages/{{personnage.image}}" />
