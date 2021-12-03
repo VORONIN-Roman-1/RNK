@@ -2,16 +2,16 @@ LISTE DES FILMS (27):
 PERSONNAGES + (nombre de PERSONNAGES).
 
 PHASE I:
-1_ Iron Man:                                     Iron Man(*1), War Machine(*2), Pepper Potts(*3). (=3)
-2_ L'incroyable Hulk :                           Hulk(*4), Iron Man(1), Nick Fury(*5). (=3)
-3_ Iron Man 2 :                                  Iron Man, War Machine, Pepper Potts, Black Widow, Nick Fury. (5).
-4_ Thor:                                         Thor, Odin, Jane Foster, Heimdall, Loki, Hawkeye, Nick Fury. (7)
-5_ Captain America: First Avenger :              Captain America, Le Soldat de l'hiver, Nick Fury. (3).
-6_ Avengers :                                    Iron Man, Captain America, Hulk, Hawkeye, Thor, Black Widow, Loki, Nick Fury, Thanos. (10).
+1_ Iron Man:                                     Iron Man(*1), War Machine(*2), Pepper Potts(*3).  (=3).
+2_ L'incroyable Hulk :                           Hulk(*4), Iron Man(1), Nick Fury(*5).  (=3).
+3_ Iron Man 2 :                                  Iron Man(1), War Machine(2), Pepper Potts(3), Nick Fury(5), Black Widow(*6).  (=5).
+4_ Thor:                                         Thor(*7), Odin(*8), Jane Foster(*9), Heimdall(*10), Loki(*11), Hawkeye(*12), Nick Fury(5).  (=7)
+5_ Captain America: First Avenger :              Captain America(*13), Le Soldat de l'hiver(*14), Nick Fury(5).   (=3).
+6_ Avengers :                                    Iron Man(1), Captain America(13), Hulk(4), Hawkeye(12), Thor(7), Black Widow(6), Loki(11), Nick Fury(5), Thanos(*15). (=9).
 
 PHASE II:
-7_ Iron Man 3 :                                  Iron Man, War Machine, Pepper Potts, Hulk. (4)  
-8_ Thor: Le monde des ténèbres :                 Thor, Odin, Jane Foster, Heimdall, Loki, Le Collectionneur. (7).
+7_ Iron Man 3 :                                  Iron Man(1), War Machine(2), Pepper Potts(3), Hulk(4).  (=4).  
+8_ Thor: Le monde des ténèbres :                 Thor(7), Odin(8), Jane Foster(9), Heimdall(10), Loki(11), Le Collectionneur(*16).  (=7).
 9_ Captain America : Le Soldat de l'hiver :      Captain America, Le Soldat de l'hiver, Black Widow, Le Faucon, Nick Fury, Wanda Maximoff. (6).    
 10_ Les Gardiens de la Galaxie :                 Star-Lord, Gamora, Rocket, Groot, Drax, Yondu, Nebula, Le Collectionneur. (8).
 11_ Avengers: L'Ere d'Ultron :                   Iron Man, Captain America, Hulk, Hawkeye, Thor, Black Widow, Thanos, Ultron, War Machine, Le Faucon, Wanda Maximoff, Pietro Maximoff, Heimdall, Nick Fury. (13).
