@@ -3,7 +3,9 @@
         <h2 class="header center">{{ personnage.name }}</h2>
         <div class="card horizontal hoverable">
             <div class="card-image">
-                <img [src]="personnage.image">
+                <img src="../../assets/imagesPersonnages/{{personnage.image}}" />
+            </div>
+            <div class="card small">
             </div>
             <div class="card-stacked">
                 <div class="card-content">
@@ -12,9 +14,6 @@
                           <tr>
                             <td>Nom : </td>
                             <td><strong>{{ personnage.alias }}</strong></td>
-                            <td>Photo : </td>
-                            <td><strong>{{ personnage.image }}</strong></td>
-                            
                           </tr>
                         </tbody>
                     </table>

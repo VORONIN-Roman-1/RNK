@@ -9,14 +9,26 @@ import { ActivatedRoute, Router } from '@angular/router';
     templateUrl: './list-personnage.component.html'
 })
 export class ListPersonnageComponent implements OnInit {
-
+    condition = true;
     personnages!: Personnage[];
+    options = { fullWidth: false };
+
   constructor( 
       private route: ActivatedRoute,
       private router : Router,private personnageService: PersonnageService) { }
 
       ngOnInit(): void {
         this.getPersonnages();
+    }
+    ngAfterViewInit() {
+    }
+
+    getCarousel() {
+        let elems = document.querySelectorAll('.carousel');
+        let instances = M.Carousel.init(elems, this.options);
+         setTimeout(() => {
+            this.condition = false;
+        }, 0);
     }
       getPersonnages(): void {
         this.personnageService.getPersonnages()
