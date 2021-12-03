@@ -1,5 +1,6 @@
 package com.project.marvelBack.entity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -15,10 +16,16 @@ import javax.persistence.Table;
 
 import org.springframework.lang.Nullable;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
+@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 @Entity
 @Table(name = "personnage")
+
 public class Personnage {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,13 +39,20 @@ public class Personnage {
 	
 	
 
-	@ManyToMany(fetch=FetchType.LAZY)
-	@JoinTable(
+	
+/*	@JoinTable(
 			name="film_personnage",
 			joinColumns=@JoinColumn(name="personnage_id"),
 			inverseJoinColumns=@JoinColumn(name="film_id")
+	
 			)
-	private List <Film> films;
+	*/
+	//@JsonIgnore
+	//@JsonBackReference
+	@ManyToMany(mappedBy = "personnages" )
+	private List <Film> films ;
+	
+	
 	
 	public List<Film> getFilms() {
 		return films;

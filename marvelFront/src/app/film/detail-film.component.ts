@@ -33,4 +33,9 @@ delete(film: Film)  {
     this.filmService.deleteFilm(film).subscribe(_ => this.goBack());
     }
 
+    selectPersonnages(personnage: Personnage) {
+        // alert("Vous avez cliqué sur le personnage : " + personnage.name)
+        let link = ['/personnage', personnage.id];
+        this.router.navigate(link);
+      }
 }

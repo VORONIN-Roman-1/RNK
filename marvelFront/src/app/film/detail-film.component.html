@@ -18,10 +18,28 @@
                             <td><strong>{{ film.year }}</strong></td>
                             
                           </tr>   
-                          <list-personnage></list-personnage> 
+                         
                         </tbody>
                     </table>
+                    
                 </div>
+                <div *ngFor="let personnage of film.personnages" class="col s6 m4">
+                    <div class="card horizontal" (click)="selectPersonnages(personnage)" personnagePreSelect="#616161">
+                      <a class="btn-floating btn-small waves-effect waves-light black"><i class="material-icons">forward</i></a>
+                      <div class="card-image">
+                        <img [src]="personnage.image">
+                      </div>
+                      <div class="card-stacked">
+                        <div class="card-content">
+                          <p>{{ personnage.name }}</p>
+                          <p><small>{{personnage.alias}}</small></p>
+                        
+                        </div>
+                  
+                      </div>
+                  </div>
+                </div> 
+             
                 <div class="card-action">
                     <a (click)="goBack()" class="waves-effect waves-light btn black">Retour</a>
                     <a (click)="delete(film)"class="waves-effect waves-light btn black">Modifier</a>
