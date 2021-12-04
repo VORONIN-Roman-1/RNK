@@ -11,30 +11,30 @@ PHASE I:
 
 PHASE II:
 7_ Iron Man 3 :                                  Iron Man(1), War Machine(2), Pepper Potts(3), Hulk(4).  (=4).  
-8_ Thor: Le monde des ténèbres :                 Thor(7), Odin(8), Jane Foster(9), Heimdall(10), Loki(11), Le Collectionneur(*16).  (=7).
-9_ Captain America : Le Soldat de l'hiver :      Captain America, Le Soldat de l'hiver, Black Widow, Le Faucon, Nick Fury, Wanda Maximoff. (6).    
-10_ Les Gardiens de la Galaxie :                 Star-Lord, Gamora, Rocket, Groot, Drax, Yondu, Nebula, Le Collectionneur. (8).
-11_ Avengers: L'Ere d'Ultron :                   Iron Man, Captain America, Hulk, Hawkeye, Thor, Black Widow, Thanos, Ultron, War Machine, Le Faucon, Wanda Maximoff, Pietro Maximoff, Heimdall, Nick Fury. (13).
-12_ Ant-Man :                                    Ant-Man, La Guêpe, Le Faucon. (3).
+8_ Thor: Le monde des ténèbres :                 Thor(7), Odin(8), Jane Foster(9), Heimdall(10), Loki(11), Le Collectionneur(*16).  (=6).
+9_ Captain America : Le Soldat de l'hiver :      Captain America(13), Le Soldat de l'hiver(14), Black Widow(6), Le Faucon(*17), Nick Fury(5), Wanda Maximoff(*18).  (=6).    
+10_ Les Gardiens de la Galaxie :                 Star-Lord(*19), Gamora(*20), Rocket(*21), Groot(*22), Drax(*23), Yondu(*24), Nebula(*25), Le Collectionneur(16).  (=8).
+11_ Avengers: L'Ere d'Ultron :                   Iron Man(1), Captain America(13), Hulk(4), Hawkeye(12), Thor(7), Black Widow(6), Thanos(15), War Machine(2), Le Faucon(17), Vision(*26),Wanda Maximoff(18), Pietro Maximoff(*27), Ultron(*28), Heimdall(10), Nick Fury(5).  (=15).
+12_ Ant-Man :                                    Ant-Man(*29), La Guêpe(*30), Le Faucon(17).  (=3).
 
 PHASE III:
-13_ Captain America: Civil War :                 Iron Man, Captain America, War Machine, Hawkeye, Le Soldat de l'hiver, Black Widow, Spider-Man, Le Faucon, Black Panther, Vision, Wanda Maximoff, Ant-Man. (12) 
-14_ Doctor Strange :                             Docteur Strange, Mordo, Wang, Thor. (3).
-15_ Les Gardiens de la Galaxie Vol.2 :           Star-Lord, Gamora, Rocket, Groot, Drax, Yondu, Nebula, Mantis. (8).  
-16_ Spider-Man: Homecoming :                     Spider-Man, Iron-Man, Captain America. (3).
-17_ Thor : Ragnarok :                            Thor, Hulk, Loki, Valkyrie, Heimdall, Odin, Docteur Strange. (7)
-18_ Black Panther :                              Black Panther, Nakia, Okoye, Shuri, W'Kabi, Le Soldat de l'hiver. (6).
-19_ Avengers: Infinity War :                     Iron Man, Captain America, Hulk, Thor, Black Widow, War Machine, Le Faucon, Vision, Wanda Maximoff, Le Soldat de l'hiver,Heimdall, Loki, Spider-Man, Black Panther, Nakia, Okoye, Shuri, Docteur Strange, Wang, Star-Lord, Gamora, Rocket, Groot, Drax, Nebula, Mantis, Le Collectionneur, Thanos.(28) 
-20_ Ant-Man et la Guêpe :                        Ant-Man, La Guêpe (2).
-21_ Captain Marvel :                             Captain Marvel, Nick Fury. (2).
-22_ Avengers: Endgame :                          Iron Man, Captain America, Hulk, Thor, Black Widow, War Machine, Le Faucon, Vision, Wanda Maximoff, Le Soldat de l'hiver, Hawkeye, Loki, Spider-Man, Black Panther, Nakia, Okoye, Shuri, Docteur Strange, Wang, Star-Lord, Gamora, Rocket, Groot, Drax, Nebula, Mantis, Ant-Man, La Guêpe, Captain Marvel, Pepper Potts, Nick Fury, Thanos.  (32).
-23_ Spider-Man: Far From Home :                  Spider-Man, Nick Fury (2).
+13_ Captain America: Civil War :                 Iron Man(1), Captain America(13), War Machine(2), Hawkeye(12), Le Soldat de l'hiver(14), Black Widow(6), Spider-Man(*31), Le Faucon(17), Black Panther(*32), Vision(26), Wanda Maximoff(18), Ant-Man(29). (=12) 
+14_ Doctor Strange :                             Docteur Strange(*33), Mordo(*34), Wang(*35), Thor(7).  (=4).
+15_ Les Gardiens de la Galaxie Vol.2 :           Star-Lord(19), Gamora(20), Rocket(21), Groot(22), Drax(23), Yondu(24), Nebula(25), Mantis(*36). (=8).  
+16_ Spider-Man: Homecoming :                     Spider-Man(31), Iron-Man(1), Captain America(13). (=3).
+17_ Thor : Ragnarok :                            Thor(7), Hulk(4), Loki(11), Valkyrie(*37), Heimdall(10), Odin(8), Docteur Strange(33). (=7)
+18_ Black Panther :                              Black Panther(32), Nakia(*38), Okoye(*39), Shuri(*40), W'Kabi(*41), Le Soldat de l'hiver(14). (=6).
+19_ Avengers: Infinity War :                     Iron Man(1), Captain America(13), Hulk(4), Thor(7), Black Widow(6), War Machine(2), Le Faucon(17), Vision(26), Wanda Maximoff(18), Le Soldat de l'hiver(14), Heimdall(10), Loki(11), Spider-Man(31), Black Panther(32), Nakia(38), Okoye(39), Shuri(40), Docteur Strange(33), Wang(35), Star-Lord(19), Gamora(20), Rocket(21), Groot(22), Drax(23), Nebula(25), Mantis(36), Le Collectionneur(16), Thanos(15). (=28) 
+20_ Ant-Man et la Guêpe :                        Ant-Man(29), La Guêpe(30) (2).
+21_ Captain Marvel :                             Captain Marvel(*42), Nick Fury(5). (2).
+22_ Avengers: Endgame :                          Iron Man(1), Captain America(13), Hulk(4), Thor(7), Black Widow(6), War Machine(2), Le Faucon(17), Vision(26), Wanda Maximoff(18), Le Soldat de l'hiver(14), Hawkeye(12), Loki(11), Spider-Man(31), Black Panther(32), Nakia(38), Okoye(39), Shuri(40), Docteur Strange(33), Wang(35), Star-Lord(19), Gamora(20), Rocket(21), Groot(22), Drax(23), Nebula(25), Mantis(36), Ant-Man(29), La Guêpe(30), Captain Marvel(42), Pepper Potts(3), Nick Fury(5), Thanos(15).  (=32).
+23_ Spider-Man: Far From Home :                  Spider-Man(31), Nick Fury(5). (=2).
 
 PHASE IV:
-24_ Black Widow :                                Black Widow. (1).
-25_ Shang-Chi et la Légende des Dix Anneaux :    Shang-Chi. (1).
-26_ Les Éternels :                               Ajak, Druig, Gilgamesh, Ikaris, Kingo, Makkari, Phastos, Sersi, Sprite, Thena. (10).
-27_ Spider-Man: No Way Home :                    Spider-Man(1).
+24_ Black Widow :                                Black Widow(6), Yelena Belova(*43). (=1).
+25_ Shang-Chi et la Légende des Dix Anneaux :    Shang-Chi(*44). (=1).
+26_ Les Éternels :                               Ajak(*45), Druig(*46), Gilgamesh(*47), Ikaris(*48), Kingo(*49), Makkari(*50), Phastos(*51), Sersi(*52), Sprite(*53), Thena(*54). (=10).
+27_ Spider-Man: No Way Home :                    Spider-Man(31).
 
 
 LISTE DE SERIES-TV (5) : PERSONNAGES + (nombre de PERSONNAGES).
