@@ -3,6 +3,7 @@ import { Personnage } from './personnage';
 import { Component, OnInit } from "@angular/core";
 
 import { ActivatedRoute, Router } from '@angular/router';
+import { Film } from '../film/film';
 
 @Component({
     selector: 'detail-personnage',
@@ -31,5 +32,9 @@ delete(personnage: Personnage)  {
     this.personnageService.deletePersonnage(personnage).subscribe(_ => this.goBack());
     }
 
-
+    selectFilm (film : Film){
+        let link = [ '/film', film.id];
+    
+        this.router.navigate(link);
+    }
 }
