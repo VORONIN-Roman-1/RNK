@@ -1,12 +1,13 @@
 <div class="carousel" id="demo-carousel">
-  <a class="carousel-item" href="personnage/{{i+1}}" *ngFor="let personnage of personnages;let i = index  let last = last">
-      {{personnage.name}}
-      <img src="../../assets/imagesPersonnages/{{personnage.image}}" />
-      <ng-container *ngIf="last">
-          <ng-container *ngIf="condition">
-              {{getCarousel()}}
-          </ng-container>
+  <a class="carousel-item" href="personnage/{{i+1}}"
+    *ngFor="let personnage of personnages;let i = index  let last = last">
+    {{personnage.name}}
+    <img src="../../assets/imagesPersonnages/{{personnage.image}}" />
+    <ng-container *ngIf="last">
+      <ng-container *ngIf="condition">
+        {{getCarousel()}}
       </ng-container>
+    </ng-container>
   </a>
 </div>
 
@@ -14,22 +15,25 @@
 <div class="row"> <br>
   <personnage-search></personnage-search>
 
-<div *ngFor="let personnage of personnages" class="col s6 m4">
-  <div class="card horizontal card-panel hoverable" (click)="selectPersonnages(personnage)" personnagePreSelect="#616161">
-    <div class="card-image responsive-img">
-      <img src="../../assets/imagesPersonnages/{{personnage.image}}" />
-    </div>
-    <div class="card large">
-    </div>
-    <div class="card-stacked">
-      <div class="card-content">
-        <p>{{ personnage.name }}</p>
-        <p><small>{{personnage.alias}}</small></p>
-        <br> <br>
-        <a class="btn-floating pulse btn-medium waves-effect waves-light black"><i class="material-icons">forward</i></a>
-      
+  <div *ngFor="let personnage of personnages" class="col s6 m4">
+    <div class="card horizontal card-panel hoverable" (click)="selectPersonnages(personnage)"
+      personnagePreSelect="#616161">
+      <div class="card-image responsive-img">
+        <img src="../../assets/imagesPersonnages/{{personnage.image}}" />
       </div>
+      <div class="card large">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>{{ personnage.name }}</p>
+          <p><small>{{personnage.alias}}</small></p>
+          <br> <br>
+          <a class="btn-floating pulse btn-medium waves-effect waves-light black"><i
+              class="material-icons">forward</i></a>
 
+        </div>
+
+      </div>
     </div>
-</div>
+  </div>
 </div>

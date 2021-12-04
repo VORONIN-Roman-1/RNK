@@ -16,10 +16,11 @@ import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 
-@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
+//@JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class, property = "id")
 @Entity
 @Table(name = "film")
 
@@ -45,6 +46,7 @@ public class Film {
 			joinColumns=@JoinColumn(name="film_id"),
 			inverseJoinColumns=@JoinColumn(name="personnage_id")
 			)
+	@JsonIgnoreProperties("films")
 	private List <Personnage> personnages ;
 	
 
